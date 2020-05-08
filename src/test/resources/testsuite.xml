@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests">
+ <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      <listener class-name="com.test.CustomListener"/>
+  </listeners>
+  <test name="ChromeTest">
+  <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="com.test.FirstTest"/>
+       <class name="com.test.SecondTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="FirefoxTest">
+  <parameter name="myBrowser" value="firefox"/>
+    <classes>
+      <class name="com.test.FirstTest"/>
+       <class name="com.test.SecondTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
