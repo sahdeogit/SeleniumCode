@@ -10,6 +10,6 @@ public class SecondTest {
 	  public void f3() throws InterruptedException {
 		Thread.sleep(2000);
 	  FirstTest.wd.findElement(By.linkText("Downloads - Selenium")).click();
-	  Assert.assertEquals("hellooSir", "hello");
+	  Assert.assertEquals("hellooMam", "hello");
 	  }
 }
